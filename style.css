@@ -24,65 +24,14 @@ td:hover {
     margin-top: 10px;
 }
 
-#delete {
+#clear-all-ingredients {
     margin-top: 5px;
 }
 
-#modal-backdrop {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.85);
-}
-  
-#recipe-modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1010;
-    overflow: scroll;
+#delete-ingredient {
+    margin-top: 5px;
 }
   
 .hidden {
     display: none;
-}
-  
-.modal-dialog {
-    width: auto;
-    max-width: 600px;
-    min-width: 350px;
-    min-height: 300px;
-    margin: 40px auto;
-    background-color: #fff;
-    border-radius: 15px;
-}
-  
-.modal-header {
-    position: relative;
-    padding: 10px 20px;
-}
-  
-.modal-header h3 {
-    margin: 0;
-    font-size: 28px;
-}
-  
-#modal-close {
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    font-size: 24px;
-    border: none;
-    background: none;
-    padding: 0;
-    cursor: pointer;
-}
-  
-.modal-body {
-    padding: 20px;
 }
