@@ -172,7 +172,8 @@ document.getElementById("delete-button").onclick = function() {
   generateTable(ingredientsList);
 }
 
-document.getElementById("find-recipes").onclick ="window.location.href='https://chelseali2001.github.io/RecipeFinder/recipes/possible_recipes.html';";
+document.getElementById("find-recipes").onclick ="window.location.href='https://chelseali2001.github.io/RecipeFinder/recipes/possible_recipes';";
 
 getAllInfo(recipes);
 generateTable(ingredientsList);
+possibleRecipesTable(ingredientsList);
