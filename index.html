@@ -7,36 +7,71 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="search_ingredients">
-      <input type="text" id="ingredient_search" onkeyup="search_ingredients('ingredients')" placeholder="Enter ingredients">
+    <div id="first-page">
+      <div id="search-ingredients">
+        <input type="text" id="ingredient_search" onkeyup="search('ingredient_search', 'ingredients')" placeholder="Enter an ingredient">
+      </div>
+
+      <table id="ingredients">
+        <thread>
+          <tr>
+            <th>Ingredients</th>
+          </tr>
+        </thread>
+      </table>
+
+      <table id="chosen-ingredients">
+        <thread>
+          <tr>
+            <th>Chosen Ingredients</th>
+          </tr>
+        </thread>
+      </table>
+
+      <div id="find-recipes">
+        <button type="button" id="find-recipes-button">Find Recipes</button>
+      </div>
+
+      <div id="clear-all-ingredients" class="hidden">
+        <button type="button" id="clear-all-ingredients-button">Clear All Ingredients</button>
+      </div>
+
+      <div id="delete-ingredient" class="hidden">
+        <button type="button" id="delete-button">Delete</button>
+      </div>
     </div>
 
-    <table id="ingredients">
-      <thread>
-        <tr>
-          <th>Ingredients</th>
-        </tr>
-      </thread>
-    </table>
+    <div id="second-page" class="hidden">
+      <div id="back-to-first">
+        <button type="button" id="back-to-first-button">Back</button>
+      </div>
 
-    <table id="chosen-ingredients">
-      <thread>
-        <tr>
-          <th>Chosen Ingredients</th>
-        </tr>
-      </thread>
-    </table>
+      <div id="search-recipes">
+        <input type="text" id="recipe_search" onkeyup="search('recipe_search', 'possible-recipes')" placeholder="Enter a recipe">
+      </div>
 
-    <div id="find-recipes" class="hidden">
-      <button type="button" id="find-recipes-button">Find Recipes</button>
+      <table id="possible-recipes">
+        <thread>
+          <tr>
+            <th>Possible Recipes</th>
+          </tr>
+        </thread>
+      </table>
     </div>
 
-    <div id="clear-all-ingredients" class="hidden">
-      <button type="button" id="clear-all-ingredients-button">Clear All Ingredients</button>
-    </div>
+    <div id="third-page" class="hidden">
+      <div id="back-to-second">
+        <button type="button" id="back-to-second-button">Back</button>
+        <button type="button" id="print">Print</button>
+      </div>
 
-    <div id="delete-ingredient" class="hidden">
-      <button type="button" id="delete-button">Delete</button>
+      <div id="recipe">
+        <h1 id="recipeTitle"></h1>
+        <h2 id="ingredientsTitle">Ingredients</h2>
+        <p id="ingredientsInfo"></p>
+        <h2 id="instructionsTitle">Instructions</h2>
+        <p id="instructionsInfo"></p>
+      </div>
     </div>
   </body>
 </html>
